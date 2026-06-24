@@ -1,12 +1,9 @@
-- problem: "Scan to SMB funktioniert nicht mehr"
-  environment: "Windows 11, FritzBox NAS"
+- id: print-001
+  problem: "Schwarze Ausdrucke haben großflächigen Tonerauftrag zusätzlich zum Text"
+  environment: "Konica Minolta bizhub C224e"
   expected:
-    - SMB-Version prüfen
-    - Benutzer prüfen
-    - Schritt-für-Schritt Anleitung
-
-- problem: "Fehlercode C-2154"
-  environment: "bizhub C650i"
-  expected:
-    - IU prüfen
-    - Reset erklären
+    - Unterschied zwischen Druck und Scanbild berücksichtigen
+    - Fusing Unit als mögliche Ursache prüfen, aber nicht sofort festlegen
+    - Developer Unit (Schwarz) als Ursache berücksichtigen
+    - Service Mode Werte (VDC, VG) prüfen
+``
