@@ -1,0 +1,19 @@
+
+- id: print-001
+  category: print-quality
+  problem: "Auf schwarzen Ausdrucken war außer dem Text auch großflächig schwarzer Toner auf dem Papier."
+  environment: "Konica Minolta bizhub C224e"
+  tricky_part: |
+    Das vom Kunden gesendete Scanbild sah zunächst so aus,
+    als könnte der Fehler von der Fusing Unit kommen.
+    Vor Ort wurde im Service Mode unter State Confirmation / Table Number
+    der Wert VDC K geprüft. VDC K stand auf 254.
+  actual_solution: "Developer Unit Schwarz wurde gegen eine neue Developer Unit ausgetauscht."
+  expected:
+    - Scanbild oder Foto nicht vorschnell als Beweis für Fusing-Fehler bewerten
+    - Fusing Unit als mögliche Ursache erwähnen, aber nicht als einzige Hauptursache festlegen
+    - Developer Unit Schwarz als mögliche Ursache berücksichtigen
+    - Service Mode / State Confirmation / Table Number prüfen
+    - VDC und VG Werte in die Diagnose einbeziehen
+    - Bei auffälligem VDC K Developer Unit K höher priorisieren
+    - Vor-Ort-Prüfung und internen Testdruck empfehlen
